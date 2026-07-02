@@ -18,6 +18,9 @@ fi
 # Initialize a bare bones uv project.
 uv init --name try_pre-commit --description "Trying the pre-commit package" --bare .
 
-# Install 
+# Install Packages
 uv add -r requirements.txt
+
+# Install the hook according to .pre-commit-config.yaml
+uv run pre-commit install
 
