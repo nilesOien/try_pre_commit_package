@@ -1,0 +1,7 @@
+ruff
+pre-commit
+httpx2
+fastapi
+uvicorn
+email-validator
+pytest
