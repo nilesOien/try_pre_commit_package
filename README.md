@@ -6,7 +6,11 @@ Note that the ruff checks are only done if python files are updated in the commi
 Note also that there is a hidden file, .pre-commit-config.yaml, that controls
 the setup of the pre-commit hook (see the end of setup_uv.sh).
 
-It assumes that ```uv``` is installed.
+It assumes that ```uv``` is installed, which can be done with :
+
+```
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
 
 To use it :
 
