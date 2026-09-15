@@ -11,8 +11,12 @@ It assumes that ```uv``` is installed, which can be done with :
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
+I then elected to use python 3.14 with :
+```
+uv python pin 3.14
+```
 
-To use it :
+To use this demo :
 
 * Run setup_uv.sh which is the rough equivalent of pip install, and sets up precommit (uv is *fast*)
 * Optionally, run start_server.sh and look at the (minimal, hard coded) JSON it serves out in a browser
