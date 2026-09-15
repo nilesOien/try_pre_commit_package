@@ -14,7 +14,7 @@ To use it :
 * Optionally, run start_server.sh and look at the (minimal, hard coded) JSON it serves out in a browser
 * Edit the_fast_api.py and change the line ```"firstName": "Niles",``` to ```"firstName": "Miles",```
 * With this error introduced, try to commit the change with
-  ``git commit -a -m "This will not work"```
+  ```git commit -a -m "This will not work"```
   That commit will fail due to the introduced error which is detected in the tests in ```test_suite.py```
 
 
