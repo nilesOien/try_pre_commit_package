@@ -19,4 +19,5 @@ To use it :
   ```git commit -a -m "This will not work"```
   That commit will fail due to the introduced error which is detected in the tests in ```test_suite.py```
 
+The tests can also be run without a git commit using ```uv run pre-commit run```
 
