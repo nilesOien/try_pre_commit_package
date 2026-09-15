@@ -16,6 +16,11 @@ I then elected to use python 3.14 with :
 uv python pin 3.14
 ```
 
+You can learn about that command with :
+```
+uv help python pin
+```
+
 To use this demo :
 
 * Run setup_uv.sh which is the rough equivalent of pip install, and sets up precommit (uv is *fast*)
