@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
-from fastapi.testclient import TestClient
 from fastapi import status
+from fastapi.testclient import TestClient
 
 # Import the app from
-from .theFastAPI import theApp
+from .the_fast_api import theApp
 
 client = TestClient(theApp)
 

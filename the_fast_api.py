@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from fastapi import FastAPI
 
 # Set up tags that appear in the documentation pages that FastAPI generates.

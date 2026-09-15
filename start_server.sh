@@ -9,7 +9,7 @@
 # means look in demoFastapi.py and start the application demoApp in there
 #
 # Run the server under UV management.
-uv run uvicorn theFastAPI:theApp --host localhost --port 8004 --workers 1
+uv run uvicorn the_fast_api:theApp --host localhost --port 8004 --workers 1
 
 exit 0
 
