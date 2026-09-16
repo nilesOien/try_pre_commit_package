@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from fastapi import status
 from fastapi.testclient import TestClient
 
