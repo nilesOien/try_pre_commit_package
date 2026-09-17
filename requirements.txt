@@ -4,4 +4,5 @@ httpx2
 fastapi
 uvicorn
 email-validator
+pydantic
 pytest
