@@ -1,9 +1,10 @@
 from fastapi import status
 from fastapi.testclient import TestClient
 
-# Import the app from
+# Import the app from the_fast_api.py
 from .the_fast_api import theApp
 
+# Get a test client (so the server doesn't have to be running to run unit tests).
 client = TestClient(theApp)
 
 
