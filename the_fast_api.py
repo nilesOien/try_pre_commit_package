@@ -23,11 +23,7 @@ theApp = FastAPI(
     title="Fast API Example",
     summary="Very simple instance of FastAPI that just serves out a static dictionary",
     description="Used here just to have something for pre-commit to test",
-    contact={
-        "name": "Niles Oien",
-        "url": "https://nso.edu",
-        "email": "noien@nso.edu",
-    },
+    contact={"name": "Niles Oien", "url": "https://nso.edu", "email": "noien@nso.edu"},
     version="1.0.0",
     openapi_tags=tags_metadata,
 )
@@ -61,9 +57,7 @@ class theResponseClass(BaseModel):
 # As such it could be quite extensive (and often is in production systems).
 # Here, it's just the static dictionary static_data that conforms to the schema
 # defined by theResponseClass.
-@theApp.get(
-    "/static-dict", response_model=theResponseClass, tags=["static-dict-service"]
-)
+@theApp.get("/static-dict", response_model=theResponseClass, tags=["static-dict-service"])
 async def get_static_dict():
     """
     Returns the static_data dictionary as a JSON response.

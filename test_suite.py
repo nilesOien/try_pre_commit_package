@@ -18,13 +18,7 @@ def test_getGoodStatus():
 def test_allKeysPresent():
     response = client.get("/static-dict")
     dictionary = response.json()
-    keysToTest = [
-        "firstName",
-        "lastName",
-        "numPets",
-        "usesPiApproximation",
-        "likesAurorasTooMuch",
-    ]
+    keysToTest = ["firstName", "lastName", "numPets", "usesPiApproximation", "likesAurorasTooMuch"]
     for keyToTest in keysToTest:
         assert keyToTest in dictionary
 

@@ -1,0 +1,11 @@
+
+# Relax the line length constraint to 100 chars.
+line-length = 100
+
+# Relax the trailing comma rule, if possible. This is a bit tricky.
+# Ruff's formatter always puts a trailing comma after the last item when a collection is split one item per line.
+# That behavior isn't configurable. skip-magic-trailing-comma only controls the *opposite* direction: whether a 
+# comma you already wrote forces the collection to stay expanded.
+format.skip-magic-trailing-comma=true
+lint.isort.split-on-trailing-comma=false
+

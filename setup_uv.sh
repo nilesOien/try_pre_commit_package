@@ -21,6 +21,10 @@ uv init --name try_pre-commit --description "Trying the pre-commit package" --ba
 # Install Packages
 uv add -r requirements.txt
 
+# Append the footer to pyproject.toml we just generated
+cat pyproject.toml pyproject.footer > pyproject.tmp
+mv pyproject.tmp pyproject.toml
+
 # Install the hook according to .pre-commit-config.yaml
 uv run pre-commit install
 
